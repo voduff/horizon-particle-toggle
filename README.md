@@ -1,3 +1,5 @@
+<img src="icon.png" alt="" width="96" align="right">
+
 # Particle Toggle
 
 A native [Horizon](https://playhorizon.dev) mod that shows or hides each
