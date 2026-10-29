@@ -1,0 +1,13 @@
+{
+  "horizon_revision": "6f8c7a0e5d531d3834c4d0be4659a1db8e7e5c2a",
+  "horizon_nightly": "nightly-2026-10-28-6f8c7a0",
+  "source_sha256": {
+    "crates/horizon-client/src/game.rs": "ce7caf8dd10addd64596700950c9a024c7f5c7e9276ff39ea1ad747c9b7cbe62",
+    "crates/horizon-client/src/game/native_hooks.rs": "d13bdf1e28b02e22bb1c5fa645b2b5281c77b6d4628967cf88f6599636e05e1b",
+    "crates/horizon-client/src/particles.rs": "436f15a69655146dbe6527632cb29e97be84c2e95e0fd27f97222fd970e5f6f9"
+  },
+  "horizon_repository": "https://github.com/horizon-rust/horizon",
+  "horizon_mixins_repository": "https://github.com/horizon-rust/horizon-mixins",
+  "horizon_mixins_revision": "0500ff24aa5933fca95a877ef41125353c4b4fe3",
+  "mixin_schema": 5
+}

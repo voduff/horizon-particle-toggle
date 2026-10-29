@@ -1,0 +1,13 @@
+[package]
+name = "horizon-particle-toggle"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "A native Horizon mod that shows or hides each particle type"
+repository = "https://github.com/voduff/horizon-particle-toggle"
+
+[lib]
+# This exact source is also injected into the Horizon game binary as
+# `crate::game::particle_toggle` by horizon-mixins.
+path = "mixins/particle-toggle/runtime.rs"
