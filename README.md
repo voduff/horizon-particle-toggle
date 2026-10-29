@@ -22,7 +22,7 @@ all 121 that Horizon draws.
   Names are the vanilla registry names (`minecraft:` is optional).
 
 Your choices are saved in the instance's
-`horizon-mods/.horizon-mod-data/particle-toggle/hidden` (one type per line)
+`horizon-mods/.horizon-mod-data/particle_toggle/hidden` (one type per line)
 and come back the next time you play. Turning the mod off in Options → Mods
 shows every particle again without losing the list.
 
@@ -38,7 +38,7 @@ build of their own (see Horizon's
 [native mods](https://github.com/horizon-rust/horizon/blob/main/docs/native-mods.md)).
 They run with your user's rights and are **not sandboxed**, so read the
 source first: it is the 9 small files in
-[`mixins/particle-toggle/`](mixins/particle-toggle).
+[`mixins/particle_toggle/`](mixins/particle_toggle).
 
 This version is pinned to Horizon **Nightly 2026-10-28 · 6f8c7a0**
 (`horizon_revision` in `horizon-mixin.toml`), and the launcher builds it
@@ -46,7 +46,7 @@ on that commit.
 
 ```sh
 git clone https://github.com/voduff/horizon-particle-toggle
-horizon-launcher native-build horizon-particle-toggle/mixins/particle-toggle --trust-native-code
+horizon-launcher native-build horizon-particle-toggle/mixins/particle_toggle --trust-native-code
 ```
 
 The first build downloads the launcher's own Rust toolchain and Horizon's
@@ -85,6 +85,10 @@ python3 tools/horizon.py test     # run the runtime tests inside it
 ```
 
 Pass `--horizon PATH` and set `HORIZON_MIXINS=PATH` when they live elsewhere.
+
+`python3 tools/package.py` writes the registry file,
+`target/particle_toggle-<version>.hnmod`: `horizon-native.json` and the
+bundle's sources, nothing compiled.
 Built from
 [horizon-native-mod-template](https://github.com/horizon-rust/horizon-native-mod-template).
 

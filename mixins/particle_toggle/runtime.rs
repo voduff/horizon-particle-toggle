@@ -6,7 +6,7 @@ use std::collections::BTreeSet;
 use std::sync::Mutex;
 use std::sync::atomic::{AtomicBool, Ordering};
 
-pub const MOD_ID: &str = "particle-toggle";
+pub const MOD_ID: &str = "particle_toggle";
 pub const TITLE: &str = "Particle Toggle 0.1.0";
 pub const DESCRIPTION: &str = "Show or hide each particle type. Also /particles.";
 /// The setting holding the hidden types, one name a line.
